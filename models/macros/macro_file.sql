@@ -11,3 +11,5 @@ from {{ ref('stg_hosts') }}
 select {{ifs('Yellow')}} as RGB
 
 select * from {{ref('students')}}
+
+select {{get_greetings()}}
